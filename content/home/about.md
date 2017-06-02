@@ -19,7 +19,7 @@ weight = 1
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD, Environmental Geosciences (in progress)"
+  course = "PhD, Environmental Geosciences"
   institution = "Michigan State University"
   year = 2018
 
