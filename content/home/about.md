@@ -13,30 +13,30 @@ weight = 1
 [interests]
   interests = [
     "Landscape hydrology",
-    "Computational Linguistics",
-    "Information Retrieval"
+    "Remote sensing",
+    "Sustainable agriculture"
   ]
 
 # List your qualifications (such as academic degrees).
 [[education.courses]]
-  course = "PhD in Artificial Intelligence"
-  institution = "Stanford University"
-  year = 2012
+  course = "PhD, Environmental Geosciences (in progress)"
+  institution = "Michigan State University"
+  year = 2018
 
 [[education.courses]]
-  course = "MEng in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
+  course = "MS, Biology"
+  institution = "University of Notre Dame"
   year = 2009
 
 [[education.courses]]
-  course = "BSc in Artificial Intelligence"
-  institution = "Massachusetts Institute of Technology"
-  year = 2008
+  course = "BS, Ecology and Evolutionary Biology"
+  institution = "Saint Louis University"
+  year = 2006
  
 +++
 
-# Biography
+# Understanding Linkages Between Water Resources and Food Production
 
-Lena Smith is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Globally, irrigated agriculture accounts for ~70% of human freshwater use. Irrigation greatly enhances crop yields and price stability, but overexploitation of water resources has depleted groundwater aquifers and reduced river flows. Moreover, incentives to expand irrigation continue to grow due to climate change, agricultural intensification, and increased food demand. Effectively managing limited water resources to meet future irrigation needs is a major challenge.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed neque elit, tristique placerat feugiat ac, facilisis vitae arcu. Proin eget egestas augue. Praesent ut sem nec arcu pellentesque aliquet. Duis dapibus diam vel metus tempus vulputate. 
+My research integrates the biophysical, socioeconomic, and political components of irrigated agricultural systems to inform sustainable water management. I use satellite remote sensing along with diverse datasets to drive landscape hydrology and crop models. These systems models are then used to understand irrigation behavior and associated impacts on water resources. 
