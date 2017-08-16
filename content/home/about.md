@@ -14,6 +14,7 @@ weight = 1
   interests = [
     "Landscape hydrology",
     "Remote sensing",
+    "Groundwater management",
     "Sustainable agriculture"
   ]
 
@@ -21,7 +22,7 @@ weight = 1
 [[education.courses]]
   course = "PhD, Environmental Geosciences"
   institution = "Michigan State University"
-  year = 2018
+  year = "expected 2018"
 
 [[education.courses]]
   course = "MS, Biology"
@@ -35,8 +36,6 @@ weight = 1
  
 +++
 
-# Understanding Linkages Between Water Resources and Food Production
+## Understanding Linkages Between Human Behavior and Water Resources 
 
-Globally, irrigated agriculture accounts for ~70% of human freshwater use. Irrigation greatly enhances crop yields and price stability, but overexploitation of water resources has depleted groundwater aquifers and reduced river flows. Moreover, incentives to expand irrigation continue to grow due to climate change, agricultural intensification, and increased food demand. Effectively managing limited water resources to meet future irrigation needs is a major challenge.
-
-My research integrates the biophysical, socioeconomic, and political components of irrigated agricultural systems to inform sustainable water management. I use satellite remote sensing along with diverse datasets to drive landscape hydrology and crop models. These systems models are then used to understand irrigation behavior and associated impacts on water resources. 
+My research integrates the biophysical, socioeconomic, and political components of human water use to inform sustainable water management. I use satellite remote sensing and economic data to drive physical models of human-water systems, including agricultural and urban water uses. These systems models are then used to understand human water use, governance, and the associated impacts on water resources. 
