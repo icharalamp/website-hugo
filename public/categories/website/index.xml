@@ -127,8 +127,8 @@ new_content(path = &amp;#39;publication/food-energy-water-nexus.md&amp;#39;,
 &lt;h3&gt;Deleting files from website&lt;/h3&gt;
 &lt;p&gt;There’s no way to remove files from the website without re-generating the full public folder. There’s no problem when adding content, such as new posts, but the only (?) way to remove a post is to:&lt;/p&gt;
 &lt;ul&gt;
-&lt;li&gt;manually delete the contents of the public folder on your computer&lt;/li&gt;
-&lt;li&gt;delete the contents of the ‘public’ folder by running &lt;code&gt;git rm -r *&lt;/code&gt;&lt;/li&gt;
+&lt;li&gt;manually delete the contents of the public folder on your computer from the website-huge folder&lt;/li&gt;
+&lt;li&gt;delete the contents of jdeines.github.io using that cloned repository and commit&lt;/li&gt;
 &lt;li&gt;re-run &lt;code&gt;serve_site()&lt;/code&gt;, which will regenerate all of the pages&lt;/li&gt;
 &lt;li&gt;then add/commit/push that to Github.&lt;/li&gt;
 &lt;/ul&gt;
