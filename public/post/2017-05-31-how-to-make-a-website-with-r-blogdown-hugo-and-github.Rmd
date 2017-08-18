@@ -136,6 +136,7 @@ I had also made a local repository for username.github.io...but I'm not sure if 
 
 ## Further tips on creating content
 
+### New page types
 Blogdown contains wrapper functions to run Huge commands. So instead of `hugo new post/my-article-name.md`, you enter wrapper functions directly into the console, such as `new_post(title="My article name")`, plus additional arguments as needed (see code examples below.)
 
 I'm learning this as we speak with this blog post, but the rmd = TRUE argument took me a moment.
@@ -152,4 +153,6 @@ new_content(path = 'publication/food-energy-water-nexus.md',
             kind = 'publication')
 ```
 
+### Deleting files from website
+There's no way to remove files from the website without re-generating the full public folder. There's no problem when adding content, such as new posts, but the only (?) way to remove a post is to manually delete the contents of the public folder on your computer, re-run `serve_site()`, which will regenerate all of the pages, and then add/commit/push that to Github.
 
