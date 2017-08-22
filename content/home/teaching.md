@@ -2,7 +2,7 @@
 # An example of using the custom widget to create your own homepage section.
 # To create more sections, duplicate this file and edit the values below as desired.
 
-date = "2016-04-20T00:00:00"
+date = "2017-04-20T00:00:00"
 draft = false
 
 title = "Teaching"
@@ -14,14 +14,10 @@ weight = 60
 
 +++
 
-This is an example of using the *custom* widget to create your own homepage section.
+I have been an instructor of the following:
 
-I am a teaching instructor for the following courses at University X:
-
-- CS101: An intro to computer science
-- CS102: An intro to computer science
-- CS103: An intro to computer science
-- CS104: An intro to computer science
-- CS105: An intro to computer science
-- CS106: An intro to computer science
-- CS107: An intro to computer science
+- Google Earth Engine Tutorial: Geohackweek 2017, University of Washington
+- Using R to Model, Manipulate, and Manage Spatial Data: Student Workshop, International Association of Landscape Ecology World Congress, 2015
+- TA: Ecology, University of Notre Dame
+- TA: General Biology, University of Notre Dame
+- TA: General Biology, Saint Louis University

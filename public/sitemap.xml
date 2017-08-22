@@ -5,6 +5,33 @@
     
     <url>
     
+      <loc>/project/class-external/</loc>
+      <lastmod>2017-08-21T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/irrigation-mapping/</loc>
+      <lastmod>2017-08-21T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/beijing-model/</loc>
+      <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/post/r-blogdown-hugo-and-github-website/</loc>
       <lastmod>2017-05-31T00:00:00+00:00</lastmod>
     </url>
@@ -15,15 +42,6 @@
     <url>
     
       <loc>/tags/academic/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/talk/example-talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -59,6 +77,24 @@
     
     <url>
     
+      <loc>/talk/agu2016/</loc>
+      <lastmod>2016-12-16T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/urban-water/</loc>
+      <lastmod>2016-12-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication/food-water-energy-nexus/</loc>
       <lastmod>2016-10-01T00:00:00+00:00</lastmod>
     </url>
@@ -86,24 +122,6 @@
     
     <url>
     
-      <loc>/project/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/example-external-project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/publication/telecoupling-beijing/</loc>
       <lastmod>2016-02-01T00:00:00+00:00</lastmod>
     </url>
@@ -113,8 +131,54 @@
     
     <url>
     
+      <loc>/talk/agu2015/</loc>
+      <lastmod>2015-12-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/talk/iale2015/</loc>
+      <lastmod>2015-12-17T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/drought-traits/</loc>
+      <lastmod>2011-11-23T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication/assisted-migration/</loc>
+      <lastmod>2008-06-28T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/publication_types/2/</loc>
-      <lastmod>2016-10-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/agriculture/</loc>
+      <lastmod>2017-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -142,18 +206,8 @@
     
     <url>
     
-      <loc>/tags/deep-learning/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/tags/demo/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -182,8 +236,18 @@
     
     <url>
     
+      <loc>/tags/irrigation/</loc>
+      <lastmod>2017-08-21T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/project/</loc>
-      <lastmod>2016-04-27T00:00:00+00:00</lastmod>
+      <lastmod>2017-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -193,7 +257,17 @@
     <url>
     
       <loc>/publication_types/</loc>
-      <lastmod>2016-10-01T00:00:00+00:00</lastmod>
+      <lastmod>2017-08-11T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/categories/r/</loc>
+      <lastmod>2017-05-31T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -212,8 +286,8 @@
     
     <url>
     
-      <loc>/categories/r/</loc>
-      <lastmod>2017-05-31T00:00:00+00:00</lastmod>
+      <loc>/tags/remote-sensing/</loc>
+      <lastmod>2017-08-21T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

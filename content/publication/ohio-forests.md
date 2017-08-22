@@ -11,7 +11,7 @@ publication_short = "In *American Midland Naturalist*"
 selected = false
 title = "Changes in forest composition in Ohio between Euro-American Settlement and the Present"
 url_pdf = "https://www.researchgate.net/publication/308920970_Changes_in_Forest_Composition_in_Ohio_Between_Euro-American_Settlement_and_the_Present"
-url_project = "project/deep-learning/"
+url_project = ""
 
 [[url_custom]]
 name = "Journal Website"

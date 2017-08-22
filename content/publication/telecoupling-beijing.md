@@ -11,7 +11,7 @@ publication_short = "In *Water International*"
 selected = true
 title = "Telecoupling in urban water systems: An examination of Beijing's imported water supply"
 url_pdf = "https://www.researchgate.net/publication/285643241_Telecoupling_in_urban_water_systems_an_examination_of_Beijing%27s_imported_water_supply"
-url_project = "project/deep-learning/"
+url_project = ""
 
 [[url_custom]]
 name = "Journal Website"
