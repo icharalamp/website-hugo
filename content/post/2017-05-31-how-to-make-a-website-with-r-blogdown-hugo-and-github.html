@@ -85,8 +85,11 @@ git submodule add git@github.com:username/username.github.io.git public</code></
 <pre class="r"><code># make a test post if you&#39;re into that
 new_post(&#39;Hello World&#39;)
 
-# compile site changes
-serve_site() # then hit stop</code></pre>
+# compile site changes: preview within R Studio
+serve_site() # then hit stop
+
+# compile site without preview:
+build_site()</code></pre>
 </div>
 <div id="back-to-git-bash" class="section level3">
 <h3>Back to Git Bash</h3>
@@ -99,7 +102,7 @@ git push origin master</code></pre>
 <p>And Voila! your website should now be available at username.github.io, and you should have a whole mess of files in your username.github.io repository now. Repeat those steps for any website changes you make:</p>
 <ul>
 <li>work on your site in RStudio</li>
-<li>run <code>serve_site()</code></li>
+<li>run <code>build_site()</code></li>
 <li>open Git Bash, cd to your public folder, and add/commit/push changes</li>
 </ul>
 <p>I had also made a local repository for username.github.io…but I’m not sure if that’s necessary either. I haven’t used it yet, and you can always recreate the files pretty easily with blogdown/Hugo.</p>
@@ -127,7 +130,7 @@ new_content(path = &#39;publication/food-energy-water-nexus.md&#39;,
 <ul>
 <li>manually delete the contents of the public folder on your computer from the website-huge folder</li>
 <li>delete the contents of jdeines.github.io using that cloned repository and commit</li>
-<li>re-run <code>serve_site()</code>, which will regenerate all of the pages</li>
+<li>re-run <code>build_site()</code>, which will regenerate all of the pages</li>
 <li>then add/commit/push that to Github.</li>
 </ul>
 </div>
