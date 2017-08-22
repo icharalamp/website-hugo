@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Coupled Human-Water Systems on Coupled Human-Water Systems</title>
-    <link>/</link>
+    <link>https://jdeines.github.io/</link>
     <description>Recent content in Coupled Human-Water Systems on Coupled Human-Water Systems</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
@@ -12,19 +12,19 @@
     
     <item>
       <title>CLASS Project</title>
-      <link>/project/class-external/</link>
+      <link>https://jdeines.github.io/project/class-external/</link>
       <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/class-external/</guid>
+      <guid>https://jdeines.github.io/project/class-external/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Remote Sensing of Irrigation</title>
-      <link>/project/irrigation-mapping/</link>
+      <link>https://jdeines.github.io/project/irrigation-mapping/</link>
       <pubDate>Mon, 21 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/project/irrigation-mapping/</guid>
+      <guid>https://jdeines.github.io/project/irrigation-mapping/</guid>
       <description>&lt;p&gt;Irrigated agriculture is the world’s largest consumer of global freshwater. Irrigation greatly enhances agricultural yields and price stability, but overexploitation of water resources has depleted groundwater aquifers and reduced annual river discharge arounge the globe. Knowledge of where and when irrigation occurs is needed for sustainable water management and hydrological modeling, yet data on patterns of irrigation through time are surprisingly rare.&lt;/p&gt;
 
 &lt;p&gt;We combine satellite imagery, historic climate data, knowledge of crop water use patterns, and emerging cloud computing tools to produce high resolution annual maps of active irrigation in key agricultural areas.&lt;/p&gt;
@@ -35,19 +35,19 @@
     
     <item>
       <title>Quantifying changes in water use and groundwater availability in a megacity using novel integrated systems modeling</title>
-      <link>/publication/beijing-model/</link>
+      <link>https://jdeines.github.io/publication/beijing-model/</link>
       <pubDate>Fri, 11 Aug 2017 00:00:00 +0000</pubDate>
       
-      <guid>/publication/beijing-model/</guid>
+      <guid>https://jdeines.github.io/publication/beijing-model/</guid>
       <description></description>
     </item>
     
     <item>
       <title>How to make a website with R blogdown, Hugo, and GitHub</title>
-      <link>/post/r-blogdown-hugo-and-github-website/</link>
+      <link>https://jdeines.github.io/post/r-blogdown-hugo-and-github-website/</link>
       <pubDate>Wed, 31 May 2017 00:00:00 +0000</pubDate>
       
-      <guid>/post/r-blogdown-hugo-and-github-website/</guid>
+      <guid>https://jdeines.github.io/post/r-blogdown-hugo-and-github-website/</guid>
       <description>&lt;p&gt;R Markdown has long been a key component of my research workflow, providing a legible “lab notebook” for my daily analyses. I’ve wanted to transition my Wordpress-based website to GitHub Pages for some time, preferably using R Markdown to better integrate into my workflow. I was pretty thrilled to discover the R &lt;code&gt;blogdown&lt;/code&gt;, Hugo, and GitHub pages combination. I was able to set it up in an afternoon, and I have high hopes that it will be a good system to allow me to share my research and analyses with a broader audience.&lt;/p&gt;
 &lt;p&gt;This post is a “how-to”, but due to time limitations it’s more of a cheat-sheet to my future self than a full tutorial - basic Git/Github knowledge, etc., is assumed. For more complete coverage, here are a few resources I used to piece this together (note some really good information was also provided in the comment sections of these blog posts):&lt;/p&gt;
 &lt;ul&gt;
@@ -171,92 +171,92 @@ new_content(path = &amp;#39;publication/food-energy-water-nexus.md&amp;#39;,
     
     <item>
       <title>Multi-year mapping of irrigated croplands over the US High Plains Aquifer using satellite data</title>
-      <link>/talk/agu2016/</link>
+      <link>https://jdeines.github.io/talk/agu2016/</link>
       <pubDate>Fri, 16 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/talk/agu2016/</guid>
+      <guid>https://jdeines.github.io/talk/agu2016/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Urban water sustainability: Framework and application</title>
-      <link>/publication/urban-water/</link>
+      <link>https://jdeines.github.io/publication/urban-water/</link>
       <pubDate>Thu, 01 Dec 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/urban-water/</guid>
+      <guid>https://jdeines.github.io/publication/urban-water/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Complex water management in modern agriculture: Trends in the water-energy-food nexus over the High Plains Aquifer</title>
-      <link>/publication/food-water-energy-nexus/</link>
+      <link>https://jdeines.github.io/publication/food-water-energy-nexus/</link>
       <pubDate>Sat, 01 Oct 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/food-water-energy-nexus/</guid>
+      <guid>https://jdeines.github.io/publication/food-water-energy-nexus/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Changes in forest composition in Ohio between Euro-American Settlement and the Present</title>
-      <link>/publication/ohio-forests/</link>
+      <link>https://jdeines.github.io/publication/ohio-forests/</link>
       <pubDate>Wed, 01 Jun 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/ohio-forests/</guid>
+      <guid>https://jdeines.github.io/publication/ohio-forests/</guid>
       <description></description>
     </item>
     
     <item>
       <title>About</title>
-      <link>/about/</link>
+      <link>https://jdeines.github.io/about/</link>
       <pubDate>Thu, 05 May 2016 21:48:51 -0700</pubDate>
       
-      <guid>/about/</guid>
+      <guid>https://jdeines.github.io/about/</guid>
       <description>&lt;p&gt;This is a &amp;ldquo;hello world&amp;rdquo; example website for the &lt;a href=&#34;https://github.com/rstudio/blogdown&#34; target=&#34;_blank&#34;&gt;&lt;strong&gt;blogdown&lt;/strong&gt;&lt;/a&gt; package. The theme was forked from &lt;a href=&#34;https://github.com/jrutheiser/hugo-lithium-theme&#34; target=&#34;_blank&#34;&gt;@jrutheiser/hugo-lithium-theme&lt;/a&gt; and modified by &lt;a href=&#34;https://github.com/yihui/hugo-lithium-theme&#34; target=&#34;_blank&#34;&gt;Yihui Xie&lt;/a&gt;.&lt;/p&gt;
 </description>
     </item>
     
     <item>
       <title>Telecoupling in urban water systems: An examination of Beijing&#39;s imported water supply</title>
-      <link>/publication/telecoupling-beijing/</link>
+      <link>https://jdeines.github.io/publication/telecoupling-beijing/</link>
       <pubDate>Mon, 01 Feb 2016 00:00:00 +0000</pubDate>
       
-      <guid>/publication/telecoupling-beijing/</guid>
+      <guid>https://jdeines.github.io/publication/telecoupling-beijing/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Quantifying the impact of a transboundary streamflow agreement on groundwater resources in the US High Plains Aquifer</title>
-      <link>/talk/agu2015/</link>
+      <link>https://jdeines.github.io/talk/agu2015/</link>
       <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/talk/agu2015/</guid>
+      <guid>https://jdeines.github.io/talk/agu2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Telecoupling in urban water systems: an examination of Beijing&#39;s imported water supply</title>
-      <link>/talk/iale2015/</link>
+      <link>https://jdeines.github.io/talk/iale2015/</link>
       <pubDate>Thu, 17 Dec 2015 00:00:00 +0000</pubDate>
       
-      <guid>/talk/iale2015/</guid>
+      <guid>https://jdeines.github.io/talk/iale2015/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Traits associated with drought survival in three Australian tropical rainforest seedlings</title>
-      <link>/publication/drought-traits/</link>
+      <link>https://jdeines.github.io/publication/drought-traits/</link>
       <pubDate>Wed, 23 Nov 2011 00:00:00 +0000</pubDate>
       
-      <guid>/publication/drought-traits/</guid>
+      <guid>https://jdeines.github.io/publication/drought-traits/</guid>
       <description></description>
     </item>
     
     <item>
       <title>An assessment of invasion risk from assisted migration</title>
-      <link>/publication/assisted-migration/</link>
+      <link>https://jdeines.github.io/publication/assisted-migration/</link>
       <pubDate>Sat, 28 Jun 2008 00:00:00 +0000</pubDate>
       
-      <guid>/publication/assisted-migration/</guid>
+      <guid>https://jdeines.github.io/publication/assisted-migration/</guid>
       <description></description>
     </item>
     
