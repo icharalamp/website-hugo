@@ -191,7 +191,7 @@ I also made a new site with the updated theme in order to easily check for diffe
 Modified from [The Blogdown Docs](https://bookdown.org/yihui/blogdown/workflow.html)
 
 * Open the project in RStudio
-* Set `options(servr.daemon) = FALSE`, since `true` repetedly crashed my RStudio. You can also add this to your .Rprofile if you'd prefer
+* Set `options(servr.daemon = FALSE)`, since `true` repetedly crashed my RStudio. You can also add this to your .Rprofile if you'd prefer
 * To preview site, click the RStudio Add-in `Serve Site`. YOu can keep this active as your work to update as you go (or encounter errors as you go, very helpful)
 * Under Tools > Project Options, be sure that the "preview site" box is unchecked under Build Tools.
 * To publish, RESTART the R session and run `blogdown::hugo_build()`. This will process your website into the public/ directory.
