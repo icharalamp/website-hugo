@@ -14,6 +14,8 @@ tags:
 
 R Markdown has long been a key component of my research workflow, providing a legible "lab notebook" for my daily analyses. I've wanted to transition my Wordpress-based website to GitHub Pages for some time, preferably using R Markdown to better integrate into my workflow. I was pretty thrilled to discover the R `blogdown`, Hugo, and GitHub pages combination. I was able to set it up in an afternoon, and I have high hopes that it will be a good system to allow me to share my research and analyses with a broader audience.
 
+**Update 19 October, 2017:** RStudio has built in a lot of these functions into their IDE now; I'd check [The Blogdown Documentation](https://bookdown.org/yihui/blogdown/) for more updated information. A few notes are added at the very bottom of this page. 
+
 This post is a "how-to", but due to time limitations it's more of a cheat-sheet to my future self than a full tutorial - basic Git/Github knowledge, etc., is assumed. For more complete coverage, here are a few resources I used to piece this together (note some really good information was also provided in the comment sections of these blog posts):
 
 * https://proquestionasker.github.io/blog/Making_Site/
@@ -26,6 +28,8 @@ Github pages expects the website to be in the master branch, but blogdown stores
 
 ### Blogdown and Hugo
 First thing's first: the `blogdown` package and [Hugo](https://gohugo.io/) need to be installed. You can also begin choosing your theme at this point - [find a theme here](http://themes.gohugo.io/).
+
+In R Studio:
 
 ```{r install, eval=FALSE}
 # install Blogdown from Github
@@ -164,3 +168,39 @@ There's no way to remove files from the website without re-generating the full p
 * re-run `build_site()`, which will regenerate all of the pages
 * then add/commit/push that to Github.
 
+## New RStudio Add-ins
+Update, October 19, 2017  
+More recent versions of RStudio (v 1.1.383) and Blogdown provide a number of built in Add-ins that provide alternate ways to navigate. Here are some tips I've learned:
+
+### Updating your theme
+You can update your theme by forcing a new installation of the theme. Note that this will overwrite any changes you've made, and you will need to specifically check your `config.toml` and front matter on all content pages to ensure they match the settings in the new files. It's a good idea to rename the current theme folder under the `themes` folder to ensure you can revert back if things go wonky.
+
+To install the academic theme again:
+
+```{r updateTheme, eval=FALSE}
+# update theme by overwriting
+install_theme("gcushen/hugo-academic", theme_example = FALSE, update_config = TRUE, force = TRUE)
+```
+
+I also made a new site with the updated theme in order to easily check for differences in the settings but not muddy my website project. To do this, I:
+
+* In RStudio, go to File > New Project > New Directory and select build a website
+* Fill out the form, and for the academic theme enter 'gushen/hugo-academic' in the theme option. Uncheck the boxes.
+
+### Recommended Workflow
+Modified from [The Blogdown Docs](https://bookdown.org/yihui/blogdown/workflow.html)
+
+* Open the project in RStudio
+* Set `options(servr.daemon) = FALSE`, since `true` repetedly crashed my RStudio. You can also add this to your .Rprofile if you'd prefer
+* To preview site, click the RStudio Add-in `Serve Site`. YOu can keep this active as your work to update as you go (or encounter errors as you go, very helpful)
+* Under Tools > Project Options, be sure that the "preview site" box is unchecked under Build Tools.
+* To publish, RESTART the R session and run `blogdown::hugo_build()`. This will process your website into the public/ directory.
+* Note: never hit the `knit` button
+
+My submodule connection broke somehow, so I then:
+
+* delete the contents of a separate R project which houses my website files
+* copy and paste the public/ directory into this folder
+* push those changes to my jdeines.github.io repository
+  
+Someday I'll fix that. There are some updated? instructions for that [here](https://bookdown.org/yihui/blogdown/github-pages.html).

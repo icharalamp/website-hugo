@@ -10,7 +10,8 @@ publication = "*Geophysical Research Letters*"
 publication_short = "In *Geophysical Research Letters*"
 selected = true
 title = "Annual irrigation dynamics in the US northern High Plains derived from Landsat satellite data"
-url_pdf = ""
+url_pdf = "http://hydrogeology.msu.edu/wordpress/wp-content/uploads/2017/10/Deines_et_al-2017-Geophysical_Research_Letters_pretypesetting_withSupplement.pdf"
+url_dataset = "https://www.hydroshare.org/resource/55331a41d5f34c97baf90beb910af070/"
 url_project = "https://jdeines.github.io/project/irrigation-mapping/"
 
 [[url_custom]]

@@ -15,6 +15,7 @@ tags:
 
 
 <p>R Markdown has long been a key component of my research workflow, providing a legible “lab notebook” for my daily analyses. I’ve wanted to transition my Wordpress-based website to GitHub Pages for some time, preferably using R Markdown to better integrate into my workflow. I was pretty thrilled to discover the R <code>blogdown</code>, Hugo, and GitHub pages combination. I was able to set it up in an afternoon, and I have high hopes that it will be a good system to allow me to share my research and analyses with a broader audience.</p>
+<p><strong>Update 19 October, 2017:</strong> RStudio has built in a lot of these functions into their IDE now; I’d check <a href="https://bookdown.org/yihui/blogdown/">The Blogdown Documentation</a> for more updated information. A few notes are added at the very bottom of this page.</p>
 <p>This post is a “how-to”, but due to time limitations it’s more of a cheat-sheet to my future self than a full tutorial - basic Git/Github knowledge, etc., is assumed. For more complete coverage, here are a few resources I used to piece this together (note some really good information was also provided in the comment sections of these blog posts):</p>
 <ul>
 <li><a href="https://proquestionasker.github.io/blog/Making_Site/" class="uri">https://proquestionasker.github.io/blog/Making_Site/</a></li>
@@ -27,6 +28,7 @@ tags:
 <div id="blogdown-and-hugo" class="section level3">
 <h3>Blogdown and Hugo</h3>
 <p>First thing’s first: the <code>blogdown</code> package and <a href="https://gohugo.io/">Hugo</a> need to be installed. You can also begin choosing your theme at this point - <a href="http://themes.gohugo.io/">find a theme here</a>.</p>
+<p>In R Studio:</p>
 <pre class="r"><code># install Blogdown from Github
 install.packages(&#39;devtools&#39;)
 devtools::install_github(&#39;rstudio/blogdown&#39;)
@@ -133,5 +135,41 @@ new_content(path = &#39;publication/food-energy-water-nexus.md&#39;,
 <li>re-run <code>build_site()</code>, which will regenerate all of the pages</li>
 <li>then add/commit/push that to Github.</li>
 </ul>
+</div>
+</div>
+<div id="new-rstudio-add-ins" class="section level2">
+<h2>New RStudio Add-ins</h2>
+<p>Update, October 19, 2017<br />
+More recent versions of RStudio (v 1.1.383) and Blogdown provide a number of built in Add-ins that provide alternate ways to navigate. Here are some tips I’ve learned:</p>
+<div id="updating-your-theme" class="section level3">
+<h3>Updating your theme</h3>
+<p>You can update your theme by forcing a new installation of the theme. Note that this will overwrite any changes you’ve made, and you will need to specifically check your <code>config.toml</code> and front matter on all content pages to ensure they match the settings in the new files. It’s a good idea to rename the current theme folder under the <code>themes</code> folder to ensure you can revert back if things go wonky.</p>
+<p>To install the academic theme again:</p>
+<pre class="r"><code># update theme by overwriting
+install_theme(&quot;gcushen/hugo-academic&quot;, theme_example = FALSE, update_config = TRUE, force = TRUE)</code></pre>
+<p>I also made a new site with the updated theme in order to easily check for differences in the settings but not muddy my website project. To do this, I:</p>
+<ul>
+<li>In RStudio, go to File &gt; New Project &gt; New Directory and select build a website</li>
+<li>Fill out the form, and for the academic theme enter ‘gushen/hugo-academic’ in the theme option. Uncheck the boxes.</li>
+</ul>
+</div>
+<div id="recommended-workflow" class="section level3">
+<h3>Recommended Workflow</h3>
+<p>Modified from <a href="https://bookdown.org/yihui/blogdown/workflow.html">The Blogdown Docs</a></p>
+<ul>
+<li>Open the project in RStudio</li>
+<li>Set <code>options(servr.daemon) = FALSE</code>, since <code>true</code> repetedly crashed my RStudio. You can also add this to your .Rprofile if you’d prefer</li>
+<li>To preview site, click the RStudio Add-in <code>Serve Site</code>. YOu can keep this active as your work to update as you go (or encounter errors as you go, very helpful)</li>
+<li>Under Tools &gt; Project Options, be sure that the “preview site” box is unchecked under Build Tools.</li>
+<li>To publish, RESTART the R session and run <code>blogdown::hugo_build()</code>. This will process your website into the public/ directory.</li>
+<li>Note: never hit the <code>knit</code> button</li>
+</ul>
+<p>My submodule connection broke somehow, so I then:</p>
+<ul>
+<li>delete the contents of a separate R project which houses my website files</li>
+<li>copy and paste the public/ directory into this folder</li>
+<li>push those changes to my jdeines.github.io repository</li>
+</ul>
+<p>Someday I’ll fix that. There are some updated? instructions for that <a href="https://bookdown.org/yihui/blogdown/github-pages.html">here</a>.</p>
 </div>
 </div>

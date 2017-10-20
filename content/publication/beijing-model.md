@@ -10,9 +10,9 @@ publication = "*Geophysical Research Letters*"
 publication_short = "In *Geophysical Research Letters*"
 selected = false
 title = "Quantifying changes in water use and groundwater availability in a megacity using novel integrated systems modeling"
-url_pdf = ""
+url_pdf = "http://hydrogeology.msu.edu/publications/papers/hyndman-d-w-t-xu-j-m-deines-g-cao-r-nagelkirk-a-vina-w-mcconnell-b-basso-a-d-kendall-s-li-l-luo-f-lupi-j-a-winkler-w-yang-c-zheng-and-j-liu-2017-quantifying-changes"
 url_project = ""
-
+url_dataset = "http://dx.doi.org/10.4211/hs.cd33693989f446a28b989eeca4c71654"
 [[url_custom]]
 name = "Journal Website"
 url = "http://onlinelibrary.wiley.com/doi/10.1002/2017GL074429/abstract"

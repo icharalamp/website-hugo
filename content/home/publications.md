@@ -13,10 +13,24 @@ widget = "publications"
 weight = 20
 
 # Number of publications to list.
-count = 3
+count = 4
 
-# Show publication details (such as abstract)? (true/false)
-detailed_list = false
+# List format.
+#   0 = Simple
+#   1 = Detailed
+#   2 = APA
+#   3 = MLA
+list_format = 3
 
+# Filter by publication type.
+# -1: Any
+#  0: Uncategorized
+#  1: Conference proceedings
+#  2: Journal
+#  3: Work in progress
+#  4: Technical report
+#  5: Book
+#  6: Book chapter
+publication_type = "-1"
 +++
 
