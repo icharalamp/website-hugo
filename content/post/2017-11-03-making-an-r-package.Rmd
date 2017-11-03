@@ -1,0 +1,110 @@
+---
+title: Making an R Package
+author: Jillian Deines
+date: '2017-11-03'
+slug: making-an-r-package
+categories: []
+tags:
+  - R
+---
+
+I first wrote this cheat sheet for myself in September 2014, but in an effort to collate my scripting references in one place, I'm transferring it to the website here. It therefore comes with a very heavy disclaimer that this is now 3 years old and there are very possibly better ways to do this now (the new feature in R Studio for new project > new package seems an obvious example). But I've found this super easy and it works for me, so hey.
+
+```{r, echo = FALSE}
+library(knitr)
+opts_chunk$set(eval=FALSE)
+```
+
+This follows steps on quick and dirty package creation found on [Hilary Parker's Blog](http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/). She absolutely gets the credit for putting this together - I reproduce it here because I always forget where I had originally found it, and I am wary of relying on other people's website maintenance for future references.
+
+## Setup
+
+Load (and install if necessary) the `devtools` and `roxygen2` packages
+
+```{r packages}
+#install.packages("devtools")
+library(devtools)
+# devtools::install_github("klutometis/roxygen") # development version of roxygen2
+library(roxygen2)
+```
+
+### Create Package Directory
+Create a directory with the bare minimum folders of R packages:
+
+* man folder
+* R folder
+* .Rbuildignore file
+* DESCRIPTION file
+
+For this, just set the working directory to the location you'd like to store your package, and use the desired package name with the `create` function.
+
+```{r createPackageDir}
+setwd('C:/Users/deinesji/Dropbox/JillRGis/rPackages')
+create("groundwater")
+```
+
+Edit the DESCRIPTION file to include contact info, etc. Note that [aut, cre] indicates that I am the author and the creator of the package.
+
+## Add functions and documentation
+Add functions to the R folder in the package directory. You can have a separate file for each function (ie, head_function.R to get groundwater model head...) or you can create the functions sequentially in one file, but make sure to add documentation comments before each function.
+
+Cat example from Hilary Parker. More details on how `roxygen2` compiles the preceding comments into package documentation format in its [package documentation](https://github.com/klutometis/roxygen#roxygen2).
+
+```{r example}
+#' A Cat Function
+#'
+#' This function allows you to express your love of cats.
+#' @param love Do you love cats? Defaults to TRUE.
+#' @keywords cats
+#' @export
+#' @examples
+#' cat_function()
+ 
+cat_function <- function(love=TRUE){
+    if(love==TRUE){
+        print("I love cats!")
+    }
+    else {
+        print("I am not a cool person.")
+    }
+}
+```
+
+### Process documentation
+Converts above comments to documentation. This automatically adds in the .Rd files to the *man* directory, and adds a *NAMESPACE* file to the main directory. You can [read up more](http://r-pkgs.had.co.nz/description.html) about these, but in terms of steps you need to take, you really don't have to do anything further.
+
+Set working directory to the package folder you created above.
+
+```{r makeDoc}
+setwd("./groundwater")
+document()
+```
+
+
+## Install
+
+Now it is as simple as installing the package! You need to run this from the parent working directory that contains the cats folder.
+
+```{r}
+setwd("..")
+install("groundwater")
+```
+
+Now you have a real, live, functioning R package. For example, try typing ?cat_function. You should see the standard help page pop up!
+
+## Github it
+If you then host your package on Github, it becomes easy to install for your future self or any collaborators/users, but using `devtools:install_github`:
+
+`install_github('groundwater','jdeines')`
+
+## Basic Overview for Adding Functions
+* Open the package project in RStudio
+* create new .r script in 'R' directory
+* enter function with metadata as demonstrated in the cat example above
+* load `devtools` and `roxygen2` packages
+* setwd to package folder (ie, `groundwater`)
+* run `document()`
+* commit changed files
+* push to github
+* re-install package from github
+

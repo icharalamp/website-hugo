@@ -1,0 +1,91 @@
+---
+title: Making an R Package
+author: Jillian Deines
+date: '2017-11-03'
+slug: making-an-r-package
+categories: []
+tags:
+  - R
+---
+
+
+
+<p>I first wrote this cheat sheet for myself in September 2014, but in an effort to collate my scripting references in one place, I’m transferring it to the website here. It therefore comes with a very heavy disclaimer that this is now 3 years old and there are very possibly better ways to do this now (the new feature in R Studio for new project &gt; new package seems an obvious example). But I’ve found this super easy and it works for me, so hey.</p>
+<p>This follows steps on quick and dirty package creation found on <a href="http://hilaryparker.com/2014/04/29/writing-an-r-package-from-scratch/">Hilary Parker’s Blog</a>. She absolutely gets the credit for putting this together - I reproduce it here because I always forget where I had originally found it, and I am wary of relying on other people’s website maintenance for future references.</p>
+<div id="setup" class="section level2">
+<h2>Setup</h2>
+<p>Load (and install if necessary) the <code>devtools</code> and <code>roxygen2</code> packages</p>
+<pre class="r"><code>#install.packages(&quot;devtools&quot;)
+library(devtools)
+# devtools::install_github(&quot;klutometis/roxygen&quot;) # development version of roxygen2
+library(roxygen2)</code></pre>
+<div id="create-package-directory" class="section level3">
+<h3>Create Package Directory</h3>
+<p>Create a directory with the bare minimum folders of R packages:</p>
+<ul>
+<li>man folder</li>
+<li>R folder</li>
+<li>.Rbuildignore file</li>
+<li>DESCRIPTION file</li>
+</ul>
+<p>For this, just set the working directory to the location you’d like to store your package, and use the desired package name with the <code>create</code> function.</p>
+<pre class="r"><code>setwd(&#39;C:/Users/deinesji/Dropbox/JillRGis/rPackages&#39;)
+create(&quot;groundwater&quot;)</code></pre>
+<p>Edit the DESCRIPTION file to include contact info, etc. Note that [aut, cre] indicates that I am the author and the creator of the package.</p>
+</div>
+</div>
+<div id="add-functions-and-documentation" class="section level2">
+<h2>Add functions and documentation</h2>
+<p>Add functions to the R folder in the package directory. You can have a separate file for each function (ie, head_function.R to get groundwater model head…) or you can create the functions sequentially in one file, but make sure to add documentation comments before each function.</p>
+<p>Cat example from Hilary Parker. More details on how <code>roxygen2</code> compiles the preceding comments into package documentation format in its <a href="https://github.com/klutometis/roxygen#roxygen2">package documentation</a>.</p>
+<pre class="r"><code>#&#39; A Cat Function
+#&#39;
+#&#39; This function allows you to express your love of cats.
+#&#39; @param love Do you love cats? Defaults to TRUE.
+#&#39; @keywords cats
+#&#39; @export
+#&#39; @examples
+#&#39; cat_function()
+ 
+cat_function &lt;- function(love=TRUE){
+    if(love==TRUE){
+        print(&quot;I love cats!&quot;)
+    }
+    else {
+        print(&quot;I am not a cool person.&quot;)
+    }
+}</code></pre>
+<div id="process-documentation" class="section level3">
+<h3>Process documentation</h3>
+<p>Converts above comments to documentation. This automatically adds in the .Rd files to the <em>man</em> directory, and adds a <em>NAMESPACE</em> file to the main directory. You can <a href="http://r-pkgs.had.co.nz/description.html">read up more</a> about these, but in terms of steps you need to take, you really don’t have to do anything further.</p>
+<p>Set working directory to the package folder you created above.</p>
+<pre class="r"><code>setwd(&quot;./groundwater&quot;)
+document()</code></pre>
+</div>
+</div>
+<div id="install" class="section level2">
+<h2>Install</h2>
+<p>Now it is as simple as installing the package! You need to run this from the parent working directory that contains the cats folder.</p>
+<pre class="r"><code>setwd(&quot;..&quot;)
+install(&quot;groundwater&quot;)</code></pre>
+<p>Now you have a real, live, functioning R package. For example, try typing ?cat_function. You should see the standard help page pop up!</p>
+</div>
+<div id="github-it" class="section level2">
+<h2>Github it</h2>
+<p>If you then host your package on Github, it becomes easy to install for your future self or any collaborators/users, but using <code>devtools:install_github</code>:</p>
+<p><code>install_github('groundwater','jdeines')</code></p>
+</div>
+<div id="basic-overview-for-adding-functions" class="section level2">
+<h2>Basic Overview for Adding Functions</h2>
+<ul>
+<li>Open the package project in RStudio</li>
+<li>create new .r script in ‘R’ directory</li>
+<li>enter function with metadata as demonstrated in the cat example above</li>
+<li>load <code>devtools</code> and <code>roxygen2</code> packages</li>
+<li>setwd to package folder (ie, <code>groundwater</code>)</li>
+<li>run <code>document()</code></li>
+<li>commit changed files</li>
+<li>push to github</li>
+<li>re-install package from github</li>
+</ul>
+</div>
