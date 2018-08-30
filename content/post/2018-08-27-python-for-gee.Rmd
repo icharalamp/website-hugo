@@ -118,3 +118,48 @@ print(image.getInfo())
 ```
 
 and if everything is correct, the metadata for an image should be printed
+
+## going further
+That was pretty bare bones. Let's assume I want more packages in my environment
+
+* open terminal
+* activate environment: `source activate py27`
+* list existing packages in environment: `conda list -n py27`
+
+There's a lot there but not some of what I anticipate needing. I think I can use `conda install` and `pip install` interchangably here, except in cases where something isn't on conda and I need to use pip.
+
+```{python eval=FALSE}
+# one at a time
+conda install numpy 
+
+# or many at once
+conda install scipy pandas gdal matplotlib geopandas rasterio
+```
+
+### installing packages not on conda
+George Azzari's `gee_tools` package is (hosted on Github)[https://github.com/george-azzari/gee_tools] and not found via conda install or pip install.
+
+So, I can tell it to install from git:
+
+```{python eval=FALSE}
+pip install git+git://github.com/george-azzari/gee_tools.git
+```
+
+Seems good!
+
+# test gee_tools
+See if I can run something. Using Spyder here for no good reason at all, except I read the internet about Spyder vs PyCharm and decided both seem to have their advantages, and thus far I've actually used Spyder before.
+
+To do this from the beginning:
+
+* open the terminal
+* activate python environment: `source activate py27`
+* launch spyder, which I've already installed in this environment above: `spyder`
+
+The rest will be the script run in Spyder:
+
+```{python eval=FALSE}
+
+```
+
+
