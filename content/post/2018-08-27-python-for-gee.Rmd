@@ -3,6 +3,7 @@ title: Running Google Earth Engine from Python
 author: Jillian Deines
 date: '2017-11-03'
 slug: python-for-gee
+draft: yes
 categories: []
 tags:
   - EarthEngine, python
@@ -39,7 +40,7 @@ dependencies:
 
 You would then install this environment.yml file to create a conda environment called 'testenv':
 
-```{eval=FALSE}
+```
 $ conda env create --file environment.yml
 ```
 
@@ -49,38 +50,38 @@ terminal, python 2.7:
 
 1. install Google APIs client library
 
-```{python eval=FALSE}
+```
 pip install google-api-python-client
 ```
 
 2. check that the functioning crypto libraries are installed:
 
-```{python eval=FALSE}
+```
 python -c "from oauth2client import crypt"
 ```
 
 If you get an error, install a Crypto library:
 
-```{python eval=FALSE}
+```{}
 pip install PyCrypto
 ```
 
 install the earth engine python api
 
-```{python eval=FALSE}
+```{}
 pip install earthengine-api
 ```
 
 I still got an error message from `python -c "from oauth2client import crypt"` so I then also explicitly installed oauth2client (I had been working in a fresh environment I recently created)
 
-```{python eval=FALSE}
+```{}
 pip install oauth2client
 python -c "from oauth2client import crypt"
 ```
 
 set up authentication credentials
 
-```{python eval=FALSE}
+```{}
 python -c "import ee; ee.Initialize()"
 
 # and when prompted, possibly in a new terminal window but I didn't read that first
@@ -105,7 +106,7 @@ in future:
 
 Then run
 
-```{python eval=FALSE}
+```{}
 # Import the Earth Engine Python Package
 import ee
 
@@ -128,7 +129,7 @@ That was pretty bare bones. Let's assume I want more packages in my environment
 
 There's a lot there but not some of what I anticipate needing. I think I can use `conda install` and `pip install` interchangably here, except in cases where something isn't on conda and I need to use pip.
 
-```{python eval=FALSE}
+```{}
 # one at a time
 conda install numpy 
 
@@ -141,7 +142,7 @@ George Azzari's `gee_tools` package is (hosted on Github)[https://github.com/geo
 
 So, I can tell it to install from git:
 
-```{python eval=FALSE}
+```{}
 pip install git+git://github.com/george-azzari/gee_tools.git
 ```
 
@@ -158,7 +159,7 @@ To do this from the beginning:
 
 The rest will be the script run in Spyder:
 
-```{python eval=FALSE}
+```{}
 
 ```
 

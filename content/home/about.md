@@ -22,7 +22,7 @@ weight = 1
 [[education.courses]]
   course = "PhD, Environmental Geosciences"
   institution = "Michigan State University"
-  year = "expected 2018"
+  year = 2018
 
 [[education.courses]]
   course = "MS, Biology"

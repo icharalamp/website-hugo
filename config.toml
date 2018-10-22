@@ -39,11 +39,11 @@ defaultContentLanguageInSubdir = false
 
   # Your details.
   name = "Jillian Deines"
-  role = "PhD Candidate"
+  role = "Postdoctoral Scholar"
  
  # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Michigan State University", url = "http://hydrogeology.msu.edu/" } ]
+  organizations = [ { name = "Stanford University", url = "https://fse.fsi.stanford.edu/" } ]
   
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "websiteHeadshot.jpg"
