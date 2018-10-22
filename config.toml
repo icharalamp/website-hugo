@@ -162,7 +162,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:deinesji@msu.edu"
+    link = "mailto:jdeines@stanford.edu"
 
   [[params.social]]
     icon = "twitter"
